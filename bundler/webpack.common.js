@@ -7,15 +7,15 @@ module.exports = {
     entry: path.resolve(__dirname, '../public/script.js'),
     output:
     {
-        filename: 'bundle.[contenthash].js',
-        // path: path.resolve(__dirname, '../dist')
+        filename: 'script.js',
+        path: path.resolve(__dirname, '../dist')
     },
     devtool: 'source-map',
     plugins:
     [
         new CopyWebpackPlugin({
             patterns: [
-                { from: path.resolve(__dirname, '../static') }
+                { from: path.resolve(__dirname, '../assets') }
             ]
         }),
         new HtmlWebpackPlugin({
