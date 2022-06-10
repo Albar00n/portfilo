@@ -91,9 +91,6 @@ camera.position.y = 1
 camera.position.z = 3
 scene.add(camera)
 
-// Controls
-// const controls = new OrbitControls(camera, canvas)
-// controls.enableDamping = true
 
 /**
  * Renderer
@@ -165,3 +162,4 @@ document.getElementById("d").addEventListener("click", myFour);
 function myFour() {
   document.getElementById("d").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
 }
+
