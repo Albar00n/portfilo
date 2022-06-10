@@ -19,7 +19,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 // Objects
-const geometry = new THREE.PlaneBufferGeometry(7,5,64,64)
+const geometry = new THREE.PlaneBufferGeometry(11,7,64,64)
 
 // Materials
 const materials = new THREE.MeshStandardMaterial({
@@ -36,16 +36,16 @@ const plane = new THREE.Mesh(geometry, materials)
 scene.add(plane)
 plane.rotation.x = 101
 
-gui.add(plane.rotation,'x').min(0).max(600)
+gui.add(plane.rotation,'x').min(0).max(200)
 
 // Mesh
 
 // Lights
 
-const pointLight = new THREE.PointLight('#52af52', 2)
-pointLight.position.x = 2
-pointLight.position.y = 3
-pointLight.position.z = 4
+const pointLight = new THREE.PointLight('#52af52', 8)
+pointLight.position.x = 3
+pointLight.position.y = 2
+pointLight.position.z = 5
 scene.add(pointLight)
 
 gui.add(pointLight.position,'x')
@@ -78,15 +78,15 @@ window.addEventListener('resize', () =>
 
     // Update renderer
     renderer.setSize(sizes.width, sizes.height)
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1))
 })
 
 /**
  * Camera
  */
 // Base camera
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.x = 1
+const camera = new THREE.PerspectiveCamera(65, sizes.width / sizes.height, .9, 100)
+camera.position.x = 0
 camera.position.y = 1
 camera.position.z = 3
 scene.add(camera)
@@ -103,7 +103,8 @@ const renderer = new THREE.WebGLRenderer({
     alpha: true,
 })
 renderer.setSize(sizes.width, sizes.height)
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 3))
+
 
 /**
  * Animate
@@ -136,6 +137,31 @@ const tick = () =>
 
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
+
 }
 
 tick()
+
+
+document.getElementById("demo").addEventListener("click", myOne);
+
+function myOne() {
+  document.getElementById("demo").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
+}
+
+document.getElementById("dem").addEventListener("click", myTow);
+
+function myTow() {
+  document.getElementById("dem").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
+}
+document.getElementById("de").addEventListener("click", myThree);
+
+function myThree() {
+  document.getElementById("de").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
+}
+
+document.getElementById("d").addEventListener("click", myFour);
+
+function myFour() {
+  document.getElementById("d").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
+}
