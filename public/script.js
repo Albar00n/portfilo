@@ -149,7 +149,7 @@ function myOne() {
 document.getElementById("dem").addEventListener("click", myTow);
 
 function myTow() {
-  document.getElementById("dem").innerHTML = "<a href='#' target='_blank'>face</a>";
+  document.getElementById("dem").innerHTML = "<a href='https://cat-amber.vercel.app/' target='_blank'>Cat</a>";
 }
 document.getElementById("de").addEventListener("click", myThree);
 
