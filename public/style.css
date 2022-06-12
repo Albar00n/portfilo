@@ -92,8 +92,8 @@ h5{
   }
 #demo,#dem,#de,#d {
   position: absolute;
-  border: 1px solid #fff;
-  padding: 4px;
+  /* border: 1px solid #fff; */
+  /* padding: 1px; */
   top: 5%;
   left: 160%;
   color: #fff;
@@ -112,7 +112,7 @@ h5{
 }
 #d{
   position: absolute;
-  top: 74%;
+  top: 75%;
   left: 160%;
 }
 

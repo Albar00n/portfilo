@@ -36,7 +36,7 @@ const plane = new THREE.Mesh(geometry, materials)
 scene.add(plane)
 plane.rotation.x = 101
 
-gui.add(plane.rotation,'x').min(0).max(200)
+// gui.add(plane.rotation,'x').min(0).max(200)
 
 // Mesh
 
@@ -48,9 +48,9 @@ pointLight.position.y = 2
 pointLight.position.z = 5
 scene.add(pointLight)
 
-gui.add(pointLight.position,'x')
-gui.add(pointLight.position,'y')
-gui.add(pointLight.position,'z')
+// gui.add(pointLight.position,'x')
+// gui.add(pointLight.position,'y')
+// gui.add(pointLight.position,'z')
 
 
 const col = {color:'#00ff00'}
@@ -154,12 +154,12 @@ function myTow() {
 document.getElementById("de").addEventListener("click", myThree);
 
 function myThree() {
-  document.getElementById("de").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
+  document.getElementById("de").innerHTML = "<a href='https://preeminent-tanuki-eb75f9.netlify.app/' target='_blank'>House 3D</a>";
 }
 
 document.getElementById("d").addEventListener("click", myFour);
 
 function myFour() {
-  document.getElementById("d").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
+  document.getElementById("d").innerHTML = "<a href='https://thriving-wisp-2343a2.netlify.app/' target='_blank'>Map 3D</a>";
 }
 
