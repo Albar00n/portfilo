@@ -143,13 +143,13 @@ tick()
 document.getElementById("demo").addEventListener("click", myOne);
 
 function myOne() {
-  document.getElementById("demo").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
+  document.getElementById("demo").innerHTML = "<a href='#' target='_blank'>face</a>";
 }
 
 document.getElementById("dem").addEventListener("click", myTow);
 
 function myTow() {
-  document.getElementById("dem").innerHTML = "<a href='http://www.facebook.com' target='_blank'>face</a>";
+  document.getElementById("dem").innerHTML = "<a href='#' target='_blank'>face</a>";
 }
 document.getElementById("de").addEventListener("click", myThree);
 
