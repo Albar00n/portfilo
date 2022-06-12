@@ -143,7 +143,7 @@ tick()
 document.getElementById("demo").addEventListener("click", myOne);
 
 function myOne() {
-  document.getElementById("demo").innerHTML = "<a href='#' target='_blank'>face</a>";
+  document.getElementById("demo").innerHTML = "<a href='https://landing-page-ts.vercel.app/' target='_blank'>Landing Pages</a>";
 }
 
 document.getElementById("dem").addEventListener("click", myTow);
