@@ -36,7 +36,7 @@ const plane = new THREE.Mesh(geometry, materials)
 scene.add(plane)
 plane.rotation.x = 101
 
-// gui.add(plane.rotation,'x').min(0).max(200)
+gui.add(plane.rotation,'x').min(0).max(200)
 
 // Mesh
 
@@ -49,8 +49,8 @@ pointLight.position.z = 5
 scene.add(pointLight)
 
 // gui.add(pointLight.position,'x')
-// gui.add(pointLight.position,'y')
-// gui.add(pointLight.position,'z')
+gui.add(pointLight.position,'y')
+gui.add(pointLight.position,'z')
 
 
 const col = {color:'#00ff00'}
